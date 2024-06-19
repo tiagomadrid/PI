@@ -1,4 +1,4 @@
-# Sistema Web Integrador
+# Projeto Integrador
 
 ## Status do Projeto
 ![Em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)

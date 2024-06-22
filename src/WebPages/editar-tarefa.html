@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Tarefa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Editar Tarefa</h2>
+    <form id="editarTarefaForm" action="editarTarefa" method="post">
+        <input type="hidden" id="tarefaId" name="tarefaId" value="1">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" value="Título da Tarefa" required><br>
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" required>Descrição da Tarefa</textarea><br>
+        <button type="submit">Salvar Alterações</button>
+    </form>
+</body>
+</html>

@@ -1,23 +1,38 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("loginForm");
+document.addEventListener("DOMContentLoaded", function () {
+    const registroForm = document.getElementById("registroForm");
+    const criarTarefaForm = document.getElementById("criarTarefaForm");
+    const editarTarefaForm = document.getElementById("editarTarefaForm");
 
-    form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Impede o envio do formulário
+    if (registroForm) {
+        registroForm.addEventListener("submit", function (e) {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            if (!username || !password) {
+                alert("Todos os campos são obrigatórios.");
+                e.preventDefault();
+            }
+        });
+    }
 
-        const errorMessage = document.getElementById("error-message");
-        errorMessage.textContent = ""; // Limpa a mensagem de erro anterior
-        
-        const username = document.getElementById("username").value.trim();
-        const password = document.getElementById("password").value.trim();
-        
-        if (username === "" || password === "") {
-            errorMessage.textContent = "Todos os campos são obrigatórios!";
-            return false; // Impede o envio do formulário
-        }
+    if (criarTarefaForm) {
+        criarTarefaForm.addEventListener("submit", function (e) {
+            const titulo = document.getElementById("titulo").value;
+            const descricao = document.getElementById("descricao").value;
+            if (!titulo || !descricao) {
+                alert("Todos os campos são obrigatórios.");
+                e.preventDefault();
+            }
+        });
+    }
 
-        // Simula o envio do formulário
-        console.log("Formulário enviado com sucesso!");
-        errorMessage.textContent = "Formulário enviado com sucesso!";
-        return true;
-    });
+    if (editarTarefaForm) {
+        editarTarefaForm.addEventListener("submit", function (e) {
+            const titulo = document.getElementById("titulo").value;
+            const descricao = document.getElementById("descricao").value;
+            if (!titulo || !descricao) {
+                alert("Todos os campos são obrigatórios.");
+                e.preventDefault();
+            }
+        });
+    }
 });

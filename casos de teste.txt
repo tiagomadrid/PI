@@ -1,0 +1,12 @@
+Página de Login
+Caso de Teste 1: Campos de Usuário e Senha Vazios
+Ação: Deixar os campos "Usuário" e "Senha" vazios e clicar em "Entrar".
+Resposta Esperada: Aparecerá uma mensagem de alerta indicando que todos os campos são obrigatórios.
+
+Caso de Teste 2: Campo de Usuário Preenchido e Senha Vazia
+Ação: Preencher o campo "Usuário" e deixar o campo "Senha" vazio, e clicar em "Entrar".
+Resposta Esperada: Aparecerá uma mensagem de alerta indicando que todos os campos são obrigatórios.
+
+Caso de Teste 3: Campos Preenchidos Corretamente
+Ação: Preencher ambos os campos "Usuário" e "Senha" com dados válidos e clicar em "Entrar".
+Resposta Esperada: O formulário será enviado.
